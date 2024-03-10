@@ -9,7 +9,6 @@ from vertexai.generative_models import GenerativeModel, ChatSession, ResponseVal
 from constants import TRAIT_LIST, OPTIONS, TRAIT_PAIR_LIST
 from filters import universes, genres, genders, filter_by_gender, filter_by_universe, filter_by_genre
 from chatbot import chatbot_init, get_chat_response
-from dotenv import load_dotenv
 
 # Retrieve Google Application Credentials from environment variable
 google_credentials = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
