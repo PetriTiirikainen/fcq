@@ -11,9 +11,11 @@ from filters import universes, genres, genders, filter_by_gender, filter_by_univ
 from chatbot import chatbot_init, get_chat_response
 from dotenv import load_dotenv
 
-# Set the path to the Google credentials file
-credentials_file = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = credentials_file
+# Retrieve Google Application Credentials from environment variable
+google_credentials = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
+
+# Parse JSON content
+credentials = json.loads(google_credentials)
 
 # Set the path to the Google credentials file
 #os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = ".\\keys\\wbs-final-project-412007-0e822eb70e15.json"
