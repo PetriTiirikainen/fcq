@@ -14,7 +14,7 @@ from chatbot import chatbot_init, get_chat_response
 google_credentials = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
 
 # Parse JSON content
-credentials = json.loads(google_credentials)
+# credentials = json.loads(google_credentials)
 
 # Set the path to the Google credentials file
 #os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = ".\\keys\\wbs-final-project-412007-0e822eb70e15.json"
